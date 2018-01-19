@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         firebaseDatabase = FirebaseDatabase.getInstance();
         bookReference = firebaseDatabase.getReference().child("Books");
        // addBooks();
-        bookListView = findViewById(R.id.bookListView);
+     //   bookListView = findViewById(R.id.bookListView);
         adapter = new bookArrayAdapter(this, R.layout.book_list_item, bookList);
         bookListView.setAdapter(adapter);
         // Récupération des données avec abonnement aux modifications ultérieures
